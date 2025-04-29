@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Checkout LaTeX project
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
@@ -22,7 +22,7 @@ jobs:
           root_file: main.tex
 
       - name: Upload compiled PDF
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: compiled-pdf
           path: ./main.pdf
